@@ -1,0 +1,66 @@
+# 导入turtle库，并用t作为别名
+import turtle as t
+
+# 设置背景图片，图片名称为bg.gif
+t.bgpic('bg.gif')
+# 设置窗口大小，宽为961，高为700
+t.setup(961, 700)
+# 绘制脸的轮廓
+t.pensize(5)
+t.color('orange', 'yellow')
+t.begin_fill()
+t.penup()
+t.goto(240, -200)
+t.pendown()
+t.circle(200)
+t.end_fill()
+# 绘制嘴巴
+t.pencolor('brown')
+t.penup()
+t.goto(160, -100)
+t.pendown()
+t.right(40)
+t.circle(30, 80)
+t.circle(-30, 80)
+t.circle(30, 80)
+t.circle(-30, 80)
+# 绘制眉毛
+t.setheading(0)
+t.penup()
+t.goto(125, 140)
+t.pendown()
+t.circle(50, 90)
+t.setheading(0)
+t.penup()
+t.goto(360, 160)
+t.pendown()
+t.circle(50, -90)
+# 绘制右眼
+t.setheading(0)
+t.penup()
+t.goto(320, 75)
+t.pendown()
+t.fillcolor('white')
+t.begin_fill()
+t.circle(35)
+t.end_fill()
+t.color('black', 'black')
+t.begin_fill()
+t.circle(23)
+t.end_fill()
+# 绘制左眼
+t.penup()
+t.goto(160, 75)
+t.pendown()
+t.color('brown', 'white')
+t.begin_fill()
+t.circle(35)
+t.end_fill()
+t.color('black', 'black')
+t.begin_fill()
+t.circle(23)
+t.end_fill()
+# 隐藏海龟
+t.hideturtle()
+# 窗口暂停展示
+t.done()
